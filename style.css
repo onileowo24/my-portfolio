@@ -105,6 +105,12 @@ a:hover {
 .full-height .hero-text .type-container .type-text {
     position: relative;
 }
+.full-height .hero-text .type-container {
+    width: 200px;
+    overflow: hidden;
+
+}
+
 
 
 .full-height .hero-text .type-container .text2 {
