@@ -91,6 +91,7 @@ a:hover {
 }
 
 .full-height {
+    width: 100%;
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -100,6 +101,8 @@ a:hover {
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+
 }
 
 .full-height .hero-text .type-container .type-text {
