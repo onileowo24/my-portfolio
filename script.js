@@ -1,6 +1,6 @@
 var typingText = document.querySelector('.text2')
 var myArray =
-    ["Web Developer", "Geographer", "Freelancer", "Graphic Designer", "Affiliate Marketing"];
+    ["Web Developer", "Geographer", "Freelancer", "Graphic Designer", "Affiliate Marketer"];
 var arrayIndex = 1;
 
 function textReplace() {
