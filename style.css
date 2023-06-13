@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-brand2: #000066;
+    --color-brands: #0000ff;
+    --color-base: aliceblue;
+    --color-base2: azure;
+    --color-tint: #fc852b;
+    --bg-color-2: #2c2d31;
+
+
+
+}
+
+body {
+    background-color: var(--color-brand2);
+    color: var(--color-body);
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+
+}
+
+a:hover {
+    color: var(--color-tint)
+}
+
+.navbar {
+    background: var(--color-brand2);
+    box-shadow: 7px 6px 42px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 7px 6px 42px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 6px 42px -8px rgba(0, 0, 0, 0.75);
+}
+
+#navbar-toggler {
+    color: #fc852b;
+}
+
+.navbar .nav-item .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: var(--color-tint);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--color-tint);
+}
+
+
+#btn1:hover {
+    background-color: #eef3db;
+    color: var(--color-tint);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: var(--color-tint);
+}
+
+.navbar-brand span {
+    color: var(--color-tint);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.full-height .hero-text .type-container .type-text {
+    position: relative;
+}
+
+
+.full-height .hero-text .type-container .text2 {
+    color: #fc852b;
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-tint);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+.btn-brand {
+    background-color: var(--color-tint);
+    color: var(--color-brand2);
+}
+
+.text-tint {
+    color: #fc852b;
+}
+
+#service {
+    background-color: var(--color-brands);
+    cursor: pointer;
+    height: 350px;
+    min-height: 400px;
+}
+
+#service h4 {
+    font-size: 20px;
+}
+
+#service p {
+    font-size: 16px;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+    box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0px var(--color-tint);
+}
+
+.icon i {
+    color: #fc852b;
+    font-size: 32px;
+    background-color: var(--color-body);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.progress {
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    box-shadow: 10px 10px 34px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 34px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 34px -3px rgba(0, 0, 0, 0.75);
+
+}
+
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--color-tint);
+    height: 25px;
+    width: 0;
+}
+
+.progress p {
+    color: white;
+}
+
+.progress p span {
+    float: right;
+}
+
+.pro-value2 {
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--color-tint);
+    height: 25px;
+    width: 0;
+}
+
+.pro-value3 {
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--color-tint);
+    height: 25px;
+    width: 0;
+}
+
+.pro-value4 {
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--color-tint);
+    height: 25px;
+    width: 0;
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 99%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+#image-box img {
+    box-shadow: 10px 10px 34px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 34px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 34px -3px rgba(0, 0, 0, 0.75);
+}
+
+.bg-base {
+    background-color: var(--color-brands);
+}
+
+#port {
+    background-color: #0000ff;
+    cursor: pointer;
+}
+
+
+.full-heights {
+    background-image: url(./images/bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    height: 50vh;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.full-heights::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+
+.social a i {
+    font-size: 32px;
+    background-color: #000066;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social a i:hover {
+    background-color: white;
+    transition: .4s;
+}
+
+#contact .form-control {
+    background-color: var(--color-base);
+    background-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+#contact-icon i {
+    font-size: 30px;
+    color: #fc852b;
+}
+
+#review .star i {
+    color: #fc852b;
+
+}
