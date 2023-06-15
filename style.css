@@ -71,11 +71,68 @@ a:hover {
     color: var(--color-tint);
 }
 
+#btn1 {
+    background: none;
+    border: 2px solid var(--color-tint);
+    font-family: sans-serif;
+    padding: 8px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: var(--color-tint);
+
+}
 
 #btn1:hover {
-    background-color: #eef3db;
-    color: var(--color-tint);
+    color: white;
 }
+
+#btn1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-tint);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+
+}
+
+#btn1::before {
+    transform: scaleX(0);
+
+}
+
+#btn1:hover::before {
+    transform: scaleX(1);
+}
+
+
+#btn1:hover::before {
+    transform: scaleX(1);
+}
+#btn2{
+    color: #b6cbce;
+    background: #fc852b;
+    padding: 5px 20px;
+}
+#btn2:hover{
+    color: var(--color-tint);
+    background:white;
+    padding: 5px 40px;
+    transition: .5s all ease;
+}
+
+
+
+
+
+
 
 .navbar-brand {
     font-size: 2rem;
@@ -108,6 +165,7 @@ a:hover {
 .full-height .hero-text .type-container .type-text {
     position: relative;
 }
+
 /* .full-height .hero-text .type-container {
     width: 200px;
     overflow: hidden;
@@ -349,8 +407,14 @@ a:hover {
 }
 
 #contact-icon i {
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
     color: #fc852b;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
 }
 
 #review .star i {
